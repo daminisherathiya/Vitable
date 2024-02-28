@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
+
+  <title>Vitable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #F4F1ED;
+      color: #0F2024;
+      font-size: 16px;
+    }
+
+    @font-face {
+      font-family: 'PP Editorial New';
+      src: url('./font/PPEditorialNew-Regular.woff2') format('woff2'), url('./font/PPEditorialNew-Regular.woff') format('woff'), url('./font/PPEditorialNew-Regular.ttf') format('truetype');
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'PP Editorial New';
+      src: url('./font/PPEditorialNew-Italic.woff2') format('woff2'), url('./font/PPEditorialNew-Italic.woff') format('woff'), url('./font/PPEditorialNew-Italic.ttf') format('truetype');
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    .section-padding {
+      padding: 0 25px;
+    }
+
+    @media (max-width:650px) {
+      .w-100 {
+        width: 100% !important;
+      }
+
+      .py-38 {
+        padding: 38px 0 !important;
+      }
+
+      .heading {
+        padding: 43px 37.5px 0 37.5px !important;
+      }
+
+      .section-title {
+        font-size: 58px !important;
+        line-height: 70px !important;
+      }
+    }
+
+    @media (max-width:576px) {
+      br {
+        display: none !important;
+      }
+
+      .section-padding {
+        padding: 0 10px !important;
+      }
+
+      .steps_row>td {
+        display: block !important;
+        width: auto !important;
+      }
+
+      .logo {
+        padding: 35px 0 !important;
+      }
+
+      .heading {
+        font-size: 46px !important;
+        height: 260px !important;
+        padding: 43px 22.5px 0 22.5px !important;
+      }
+
+      .section-title {
+        font-size: 48px !important;
+        line-height: 55px !important;
+      }
+
+      .footer-logo {
+        padding: 35px 0 65px 0 !important;
+      }
+
+      .hi-member-section {
+        padding: 40px 12.5px 0 12.5px !important;
+      }
+
+      .footer-section {
+        padding: 40px 12.5px !important;
+      }
+
+      .py-40 {
+        padding: 40px 0 !important;
+      }
+
+      .pb-40 {
+        padding: 0 0 40px 0 !important;
+      }
+
+      .py-38 {
+        padding: 30px 0 !important;
+      }
+
+      .py-15 {
+        padding: 15px 12.5px !important;
+      }
+    }
+
+    @media (max-width:430px) {
+      .section-title {
+        font-size: 45px !important;
+        line-height: 50px !important;
+      }
+
+      .steps_row_card>td {
+        display: block !important;
+        width: auto !important;
+      }
+
+      .pt-16px {
+        padding: 16px 0 0 0 !important;
+      }
+    }
+
+    @media (max-width:375px) {}
+  </style>
+</head>
+
+<body>
+  <table class="container" cellspacing="0" cellpadding="0" style="width: 100%; background-color: #F4F1ED !important;">
+    <tr>
+      <td align="center">
+        <table cellspacing="0" cellpadding="0" style="max-width: 800px;">
+          <tr>
+            <td class="logo" align="center" style="line-height: 0; padding: 50px 0;"><a
+                href="https://www.vitablebenefits.com/" style="display: block; line-height: 0;" target="_blank"><img
+                  style="width: 160px; max-width: 100%;" src="./logo.png" alt="logo"></a>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #ffffff; border-radius: 50px;">
+              <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                <tr>
+                  <td
+                    style="background-image: url(./banner.png); border-radius: 50px 50px 0px 0px; height: 300px; background-repeat: no-repeat; background-position: top left; background-size: cover;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                      <tr>
+                        <td class="heading"
+                          style="font-family: PP Editorial New; font-size: 52px; line-height:  57.72px; letter-spacing: -0.78px; color: #467886; padding: 43px 50px 0 50px;">
+                          Get started with your <br /><span style="font-style: italic; color: #56B7A9;">Vitable health
+                            plan</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="section-padding">
+                    <table class="w-100" cellspacing="0" cellpadding="0" style="width: 76.667%;">
+                      <tr>
+                        <td class="hi-member-section" style="padding: 50px 12.5px 0 12.5px;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                            <tr>
+                              <td
+                                style="color: #0F2024;font-family: Inter; font-size: 18px; font-weight: 500; line-height: 27px; letter-spacing: -0.27px;">
+                                Hi {{member.first}} – we’re so excited you chose to accept your Vitable primary care
+                                membership, we
+                                can’t wait to get to know you and your family!
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                style="color: #0F2024;font-family: Inter; font-size: 18px; font-weight: 500; line-height: 27px; letter-spacing: -0.27px; padding: 27px 0 0 0;">
+                                Download the Vitable app to unlock access to delightful care today!
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="py-40" align="center"
+                                style="padding: 50px 0; border-bottom: 1px solid #355B6540;"><a href="#"
+                                  style="color: #ffffff; background-color: #3C29A9; padding: 14.33px 25px; font-weight: 500; border-radius: 10px; font-size: 14px; letter-spacing: 0.3px; display: inline-block; line-height: 21px; text-align: center; font-family: 'IBM Plex Sans', sans-serif;"
+                                  target="_blank"><span style="line-height: 21px; vertical-align: middle;"><img
+                                      style="width: 15px; padding: 0 15px 0 0;" src="./download.png"
+                                      alt="Download"></span>Download the app</a></td>
+                            </tr>
+                            <tr>
+                              <td class="section-title py-40"
+                                style="padding: 50px 0; color: #2FA084; font-family: 'Instrument Serif', serif; font-size: 64px; line-height: 96px; letter-spacing: -0.96px; text-align: center;">
+                                Your
+                                Enrollment Checklist</td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding: 0 0 20px 0;">
+                                <table class="w-100" cellspacing="0" cellpadding="0" style="width: 97.09%;">
+                                  <tr>
+                                    <td
+                                      style="border: 1px solid #99D3CB; padding: 19px 16px 19px 25px; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.05); background: #c5e6e0; background: linear-gradient(308deg, rgba(86, 183, 169, 0.50) -1.18%, rgba(203, 237, 229, 0.50) 140.05%), #FFF; border-radius: 15px;">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr class="steps_row_card">
+                                          <td>
+                                            <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                              <tr>
+                                                <td style="line-height: 0; width: 25px;"><img style="width: 25px;"
+                                                    src="./checked.png" alt="Checked">
+                                                </td>
+                                                <td
+                                                  style="color: #355B65; font-weight: 500; line-height: 24px; font-size: 16px; font-family: 'Poppins', sans-serif; padding: 0 20px;">
+                                                  Confirm your Vitable Health enrollment</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td align="end" class="pt-16px" style="width: 85px;"><a href="#"
+                                              style="color: #5C6C70; background-color: #E4E7E6; padding: 7.75px 10.5px; font-weight: 500; border-radius: 60px; font-size: 12px; display: block; letter-spacing: -0.18px; text-align: center;  font-family: 'Inter', sans-serif; text-decoration-line: line-through;"
+                                              target="_blank">Start task</a></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding: 0 0 20px 0;">
+                                <table class="w-100" cellspacing="0" cellpadding="0" style="width: 97.09%;">
+                                  <tr>
+                                    <td
+                                      style="border: 1px solid #99D3CB; padding: 19px 16px 19px 25px; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.05); background: #f1f5f9; background: linear-gradient(130deg, rgba(203, 237, 229, 0.25) -3.02%, rgba(211, 208, 236, 0.32) 105.29%), #FFF; border-radius: 15px;">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr class="steps_row_card">
+                                          <td>
+                                            <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                              <tr>
+                                                <td style="line-height: 0; width: 25px;"><img style="width: 25px;"
+                                                    src="./unchecked.png" alt="Unchecked">
+                                                </td>
+                                                <td
+                                                  style="color: #355B65; font-weight: 500; line-height: 24px; font-size: 16px; font-family: 'Poppins', sans-serif; padding: 0 20px;">
+                                                  Download the Vitable mobile app</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td align="end" class="pt-16px" style="width: 85px;"><a href="#"
+                                              style="color: #FFFFFF; background-color: #56B7A9; padding: 7.75px 10.5px; font-weight: 500; border-radius: 60px; font-size: 12px; display: block; letter-spacing: -0.18px; text-align: center; font-family: 'Inter', sans-serif;"
+                                              target="_blank">Start task</a></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding: 0 0 20px 0;">
+                                <table class="w-100" cellspacing="0" cellpadding="0" style="width: 97.09%;">
+                                  <tr>
+                                    <td
+                                      style="border: 1px solid #99D3CB; padding: 19px 16px 19px 25px; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.05); background: #f1f5f9; background: linear-gradient(130deg, rgba(203, 237, 229, 0.25) -3.02%, rgba(211, 208, 236, 0.32) 105.29%), #FFF; border-radius: 15px;">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr class="steps_row_card">
+                                          <td>
+                                            <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                              <tr>
+                                                <td style="line-height: 0; width: 25px;"><img style="width: 25px;"
+                                                    src="./unchecked.png" alt="Unchecked">
+                                                </td>
+                                                <td
+                                                  style="color: #355B65; font-weight: 500; line-height: 24px; font-size: 16px; font-family: 'Poppins', sans-serif; padding: 0 20px;">
+                                                  Complete your Vitable profile setup</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td align="end" class="pt-16px" style="width: 85px;"><a href="#"
+                                              style="color: #FFFFFF; background-color: #56B7A9; padding: 7.75px 10.5px; font-weight: 500; border-radius: 60px; font-size: 12px; display: block; letter-spacing: -0.18px; text-align: center; font-family: 'Inter', sans-serif;"
+                                              target="_blank">Start task</a></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" class="pb-40" style="padding: 0 0 50px 0;">
+                                <table class="w-100" cellspacing="0" cellpadding="0" style="width: 97.09%;">
+                                  <tr>
+                                    <td
+                                      style="border: 1px solid #99D3CB; padding: 19px 16px 19px 25px; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.05); background: #f1f5f9; background: linear-gradient(130deg, rgba(203, 237, 229, 0.25) -3.02%, rgba(211, 208, 236, 0.32) 105.29%), #FFF; border-radius: 15px;">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr class="steps_row_card">
+                                          <td>
+                                            <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                              <tr>
+                                                <td style="line-height: 0; width: 25px;"><img style="width: 25px;"
+                                                    src="./unchecked.png" alt="Unchecked">
+                                                </td>
+                                                <td
+                                                  style="color: #355B65; font-weight: 500; line-height: 24px; font-size: 16px; font-family: 'Poppins', sans-serif; padding: 0 20px;">
+                                                  Add your dependents to your Vitable plan</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td align="end" class="pt-16px" style="width: 85px;"><a href="#"
+                                              style="color: #FFFFFF; background-color: #56B7A9; padding: 7.75px 10.5px; font-weight: 500; border-radius: 60px; font-size: 12px; display: block; letter-spacing: -0.18px; text-align: center; font-family: 'Inter', sans-serif;"
+                                              target="_blank">Start task</a></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="section-padding">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                      <tr>
+                        <td class="py-38" style="padding: 38px 35px;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%; height: 100%;">
+                            <tr class="steps_row">
+                              <td style="padding: 12.5px; width: 50%;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%; height: 100%;">
+                                  <tr>
+                                    <td valign="top"
+                                      style="padding: 25px; border-radius: 15px; vertical-align: top; background: #f8f9fb; background: linear-gradient(312deg, rgba(203, 237, 229, 0.13) -87.09%, rgba(211, 208, 236, 0.16) 108.24%), #FFF; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.10);">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td style="line-height: 0; padding: 0 0 15px 0;"><img
+                                              style="width: 225px; max-width: 100%;" src="./rating.png" alt="Rating">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="color: #455154; font-size: 16px; line-height: 21.6px; letter-spacing: -0.24px; font-family: 'Inter', sans-serif;">
+                                            The provider was excellent. She was very professional, she listened and
+                                            provided
+                                            the
+                                            best service to my recruits.I would like her to come back every to clinical
+                                            I
+                                            request.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td style="padding: 12.5px; width: 50%;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%; height: 100%;">
+                                  <tr>
+                                    <td valign="top"
+                                      style="padding: 25px; border-radius: 15px; vertical-align: top; background: #f8f9fb; background: linear-gradient(312deg, rgba(203, 237, 229, 0.13) -87.09%, rgba(211, 208, 236, 0.16) 108.24%), #FFF; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.10);">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td style="line-height: 0; padding: 0 0 15px 0;"><img
+                                              style="width: 225px; max-width: 100%;" src="./rating.png" alt="Rating">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="color: #455154; font-size: 16px; line-height: 21.6px; letter-spacing: -0.24px; font-family: 'Inter', sans-serif;">
+                                            The provider was amazing and detailed with her assessment. very
+                                            professional and
+                                            answers all our team questions. Thank you again.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr class="steps_row">
+                              <td style="padding: 12.5px; width: 50%;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%; height: 100%;">
+                                  <tr>
+                                    <td valign="top"
+                                      style="padding: 25px; border-radius: 15px; vertical-align: top; background: #f8f9fb; background: linear-gradient(312deg, rgba(203, 237, 229, 0.13) -87.09%, rgba(211, 208, 236, 0.16) 108.24%), #FFF; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.10);">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td style="line-height: 0; padding: 0 0 15px 0;"><img
+                                              style="width: 225px; max-width: 100%;" src="./rating.png" alt="Rating">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="color: #455154; font-size: 16px; line-height: 21.6px; letter-spacing: -0.24px; font-family: 'Inter', sans-serif;">
+                                            The provider was punctual and effective. This service helps our business
+                                            remain in
+                                            compliance at all times.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td style="padding: 12.5px; width: 50%;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%; height: 100%;">
+                                  <tr>
+                                    <td valign="top"
+                                      style="padding: 25px; border-radius: 15px; vertical-align: top; background: #f8f9fb; background: linear-gradient(312deg, rgba(203, 237, 229, 0.13) -87.09%, rgba(211, 208, 236, 0.16) 108.24%), #FFF; box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 10px 20px 0px rgba(0, 0, 0, 0.10);">
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td style="line-height: 0; padding: 0 0 15px 0;"><img
+                                              style="width: 225px; max-width: 100%;" src="./rating.png" alt="Rating">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="color: #455154; font-size: 16px; line-height: 21.6px; letter-spacing: -0.24px; font-family: 'Inter', sans-serif;">
+                                            Providers are very knowledgeable, professional & pleasant. The Vitable staff
+                                            I
+                                            interact with have bent over backwards to meet my needs. This is a totally
+                                            new
+                                            experience for me.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="section-padding">
+                    <table class="w-100" cellspacing="0" cellpadding="0" style="width: 76.667%;">
+                      <tr>
+                        <td align="center" class="py-15"
+                          style="border-top: 1px solid #355B6540; border-bottom: 1px solid #355B6540; padding: 25px 12.5px;">
+                          <table cellspacing="0" cellpadding="0" style="width: 95.09%;">
+                            <tr>
+                              <td style="padding: 25px 0; border-bottom: 0.5px solid #355B6540;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                  <tr class="steps_row_card">
+                                    <td
+                                      style="font-family: PP Editorial New; font-size: 24px; color: #355B65; line-height: 30px; padding: 0 16px 0 0;">
+                                      Health Plan <br />Resource Center</td>
+                                    <td class="pt-16px" align="end" style="width: 148px;"><a href="#"
+                                        style="color: #FFFFFF; background-color: #6BC7B1; padding: 15px 25px; line-height: 21px; font-weight: 500; border-radius: 10px; font-size: 14px; display: block; text-align: center; font-family: 'IBM Plex Sans', sans-serif;"
+                                        target="_blank">View resources</a></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 25px 0; border-bottom: 0.5px solid #355B6540;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                  <tr class="steps_row_card">
+                                    <td
+                                      style="font-family: PP Editorial New; font-size: 24px; color: #355B65; line-height: 30px; padding: 0 16px 0 0;">
+                                      Frequently <br />Asked Questions</td>
+                                    <td class="pt-16px" align="end" style="width: 148px;"><a href="#"
+                                        style="color: #FFFFFF; background-color: #6BC7B1; padding: 15px 25px; line-height: 21px; font-weight: 500; border-radius: 10px; font-size: 14px; display: block; text-align: center; font-family: 'IBM Plex Sans', sans-serif;"
+                                        target="_blank">View questions</a></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 25px 0;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                  <tr class="steps_row_card">
+                                    <td
+                                      style="font-family: PP Editorial New; font-size: 24px; color: #355B65; line-height: 30px; padding: 0 16px 0 0;">
+                                      Contact <br />Support Team</td>
+                                    <td class="pt-16px" align="end" style="width: 148px;"><a href="#"
+                                        style="color: #FFFFFF; background-color: #6BC7B1; padding: 15px 25px; line-height: 21px; font-weight: 500; border-radius: 10px; font-size: 14px; display: block; text-align: center; font-family: 'IBM Plex Sans', sans-serif;"
+                                        target="_blank">Get in touch</a></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-logo" align="center" style="line-height: 0; padding: 50px 0 100px 0;"><a
+                      href="https://www.vitablebenefits.com/" style="display: block; line-height: 0;"
+                      target="_blank"><img style="width: 160px; max-width: 100%;" src="./logo.png" alt="logo"></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="section-padding">
+              <table class="w-100" cellspacing="0" cellpadding="0" style="width: 61.143%;">
+                <tr>
+                  <td class="footer-section" style="padding: 50px 12.5px;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                      <tr>
+                        <td
+                          style="color: #AFB7B6; font-size: 16px; font-weight: 500; line-height: 24px; font-family: 'Inter', sans-serif; text-align: center; padding: 9px 0 24px 0;">
+                          1010 N. Hancock Street, Philadelphia, PA 19123 <br />2024 Vitable, Inc. All Rights Reserved.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center; padding: 0 0 10px 0;"><a href="#"
+                            style="color: #6BC7B1; font-size: 16px; font-weight: 600; line-height: 24px; font-family: 'Inter', sans-serif;">No
+                            longer want to receive these emails?</a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
